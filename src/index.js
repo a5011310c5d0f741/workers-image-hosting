@@ -4,7 +4,7 @@ import {
     normalizePathnameMiddleware
   } from '@cfworker/web';
 import { getAssetFromKV } from "@cloudflare/kv-asset-handler";
-const pass='123'//默认登录密码
+const pass='7890'//默认登录密码
 /*
 默认密码都是123
 */
@@ -117,3 +117,4 @@ router.post(
   .use(normalizePathnameMiddleware)
   .use(router.middleware)
   .listen();
+
